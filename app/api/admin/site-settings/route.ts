@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { auth } from '@/lib/auth'
 import { getSiteSettings, updateSiteSettings } from '@/lib/api'
 
+export const dynamic = 'force-dynamic'
+
 // Get site settings
 export async function GET() {
   try {
